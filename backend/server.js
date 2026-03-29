@@ -18,7 +18,7 @@ app.use(express.json());
 // CORS — restrict to your frontend origin in production
 const allowedOrigins = process.env.CLIENT_URL
   ? [process.env.CLIENT_URL]
-  : ["http://localhost:5173", "http://localhost:3000"];
+  : ['https://e-commerce-store-seven-livid.vercel.app',"http://localhost:5173", "http://localhost:3000"];
 
 app.use(cors({ origin: allowedOrigins, credentials: true }));
 
